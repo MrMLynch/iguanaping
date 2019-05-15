@@ -1,3 +1,4 @@
+// Pulls IP addresses from iguanna connections and returns avg ping time
 package main
 
 import (
