@@ -28,7 +28,7 @@ func main() {
 	n.Origin = origin
 
 	for _, ip := range ips {
-		if ip != "" {
+		if ip != "" && ip != origin {
 			n.Nodes = append(n.Nodes, &Node{Ipaddr: ip, Avgping: strings.Split(avgPing(ip), "\n")[0]})
 		}
 	}
