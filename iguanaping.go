@@ -52,7 +52,7 @@ func main() {
 	notaCount := utils.NtxCountFunc()
 
 	for _, op := range notaCount {
-		if op.NnName == nname {
+		if strings.ToLower(op.NnName) == strings.ToLower(nname) {
 			n.Ntx24h = strconv.Itoa(op.Total)
 		}
 	}
