@@ -38,8 +38,8 @@ func main() {
 	if nname == "" {
 		log.Fatal(`Please provide your NN name as listed in testnet.json
 
-		usage: iguanaping <nn_name>
-		example: iguanaping mrlynch`)
+		usage: iguanaping -name=<nn_name>
+		example: iguanaping -name=mrlynch`)
 	}
 
 	ips := strings.Split(readFromIguana(), "\n")
